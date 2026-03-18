@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 222, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 80px;
+}
+
+#icon {
+    width: 75px;
+}
+
+#links {
+    padding-right: 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+.lista_produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(218, 222, 228);
+    padding: 40px;
+}
+
+.produtos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produtos:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+}
+
+.img_produtos {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.barra-sticky {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    border: 4px solid rgb(0, 0, 0);
+}
+
+.posicao {
+    margin: 40px;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.pos-box {
+    width: 900px;
+    margin: 15px auto;
+    padding: 15px;
+    border: 4px solid white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.pos-static {
+    position: static;
+    top: 40px;
+    left: 40px;
+}
+
+.pos-relative  {
+    position: center;
+    top: 20px;
+    left: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 14, 14);
+}
+
+.carrossel{
+    margin-top: 70px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.ativo{
+    opacity: 1;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(7, 49, 98);
+    color: white;
+    padding: 40px;
+}
+
+.rodape-coluna{
+    width: 200px;
+}
+
+.rodape-coluna h3{
+    margin-bottom: 10px;
+}
+
+.rodape-coluna a{
+    color: white;
+    text-decoration: none;
+}
+
+.rodape-coluna a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    text-align: center;
+    background-color: rgb(4, 32, 65);
+    color: white;
+    padding: 10px;
+}

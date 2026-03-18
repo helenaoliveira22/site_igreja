@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<title>REINO CASA DE ORAÇÃO</title>
+</head>
+
+<body>
+
+<header>
+
+<div id="navbar">
+        
+<a href="index.html"> 
+<img id="icon" src="img_logo.PNG" alt="Logo Comunidade Reino">
+</a>
+
+<h2>REINO CASA DE ORAÇÃO</h2>
+
+<nav class="menu">
+<a href="quem-somos.html">Quem somos</a>
+<a href="eventos.html">Eventos</a>
+<a href="reino_store.html">Loja</a>
+</nav>
+
+</div>
+
+<!-- CARROSSEL -->
+<div class="carrossel">
+
+<img class="slide" src="img1.jpeg" alt="">
+<img class="slide" src="img2.jpeg" alt="">
+<img class="slide" src="img3.jpeg" alt="">
+
+<div class="carrossel-texto">
+<h1>Bem-vindo à Reino Casa de Oração</h1>
+<p>Levando a palavra de Deus e transformando vidas</p>
+</div>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- TRANSMIÇÃO -->
+<section class="transmissao-programacao">
+
+<div class="transmissao">
+
+<h2>Transmissão ao vivo</h2>
+
+<iframe width="100%" height="250"
+src="https://www.youtube.com/@COMUNIDADECRISTAREINO"
+frameborder="0" allowfullscreen>
+</iframe>
+
+<p>Acompanhe nossos cultos ao vivo.</p>
+
+</div>
+
+<!-- PROGRAMAÇÃO -->
+<div class="programacao">
+
+<h2>Programação</h2>
+
+<div class="programacao-cards">
+
+<div class="programa-card">
+<h3>Domingo</h3>
+<p>Culto</p>
+<span>19h</span>
+</div>
+
+<div class="programa-card">
+<h3>Terça</h3>
+<p>Sala de Oração</p>
+<span>20h</span>
+</div>
+
+<div class="programa-card">
+<h3>Quinta</h3>
+<p>Culto</p>
+<span>20h</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DOAÇÃO -->
+<section class="doacao">
+
+<div class="doacao-img">
+<img src="img_colabore.jpeg" alt="Momento de oração ou igreja">
+</div>
+
+<div class="doacao-texto">
+
+<h2>Contribua com esta obra</h2>
+
+<p>
+Sua contribuição ajuda a manter os projetos da igreja,
+alcançar vidas e continuar levando a palavra de Deus.
+</p>
+
+<p><strong>Chave PIX:</strong> igreja@email.com</p>
+
+<button class="btn-doar">Fazer Doação</button>
+
+</div>
+</section>
+
+
+</main>
+
+
+<!-- RODAPE -->
+<footer class="rodape">
+
+<div class="rodape-coluna">
+<h3>Reino Casa de Oração</h3>
+<p>Levando a palavra de Deus e transformando vidas.</p>
+</div>
+
+<div class="rodape-coluna">
+<h3>Links</h3>
+<p><a href="quem-somos.html">Quem somos</a></p>
+<p><a href="eventos.html">Eventos</a></p>
+<p><a href="reino_store.html">Loja</a></p>
+</div>
+
+<div class="rodape-coluna">
+<h3>Contato</h3>
+<p>📞 (47) 0000-0000</p>
+<p>✉ contato@igreja.com</p>
+</div>
+
+<div class="rodape-coluna">
+<h3>Endereço</h3>
+<p>📍 Rua Rio Velho, 110 - Paranaguamirim</p>
+<p>Joinville - SC</p>
+</div>
+
+</footer>
+
+
+<div class="copyright">
+© 2026 Reino Casa de Oração - Todos os direitos reservados
+</div>
+
+
+
+<script>
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function trocarSlide(){
+
+slides.forEach(slide => {
+slide.classList.remove("ativo");
+});
+
+slides[index].classList.add("ativo");
+
+index++;
+
+if(index >= slides.length){
+index = 0;
+}
+
+}
+
+setInterval(trocarSlide, 3000);
+trocarSlide();
+
+</script>
+
+
+</body>
+</html>
